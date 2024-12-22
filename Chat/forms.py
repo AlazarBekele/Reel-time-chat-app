@@ -25,12 +25,12 @@ class SignUp (UserCreationForm):
         'placeholder' : 'alazarbekele11',
         'autocomplate' : 'off'
     }))
-    password1 = forms.PasswordInput (max_length=30, widget= forms.PasswordInput (attrs={
+    password1 = forms.CharField (max_length=30, label='password Confirm' ,widget= forms.PasswordInput (attrs={
         'class' : 'form-control',
         'placeholder' : 'password',
         'autocomplate' : 'off'
     }))
-    password2 = forms.PasswordInput (max_length=30, widget= forms.PasswordInput (attrs={
+    password2 = forms.CharField (max_length=30, label='password Confirm' ,widget= forms.PasswordInput (attrs={
         'class' : 'form-control',
         'placeholder' : 'confirm password',
         'autocomplate' : 'off'
