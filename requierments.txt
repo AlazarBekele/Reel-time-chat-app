@@ -1,5 +1,0 @@
-django
-pillow
-djanog-cleanup
-djanog-allauth
-django-htmx
