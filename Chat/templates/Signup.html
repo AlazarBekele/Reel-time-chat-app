@@ -10,10 +10,10 @@
 
         <div class="d-flex flex-column justify-content-center align-items-center">
 
-            <form class="d-inline-block card shadow p-3 mb-5 bg-body rounded" method="post">
+            <form class="d-inline-block card shadow p-3 mb-5 bg-body rounded col-md-3 mt-5" method="post">
 
                 {% csrf_token %}
-                {{ form.as_p }}
+                {{ signin.as_p }}
 
                 <button type="submit" class="btn btn-primary">Submit</button>
     

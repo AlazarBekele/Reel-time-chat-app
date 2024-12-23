@@ -6,6 +6,17 @@
     <title>Login Page</title>
 </head>
 <body>
+
+    <div>
+
+        <form method="post">
+
+            {% csrf_token %}
+            {{ log.as_p }}
+
+        </form>
+
+    </div>
     
 </body>
 </html>
