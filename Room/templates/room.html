@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'Include/roomhead.html' %}
+
+<body>
+    
+    <div>
+
+        {% for rooms in room %}
+
+            <h1>{{ rooms.name }}</h1>
+
+        {% endfor %}
+
+    </div>
+
+</body>
+</html>
