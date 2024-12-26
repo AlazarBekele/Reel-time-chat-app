@@ -13,9 +13,9 @@ def room(request):
 
     return render (request, 'room.html', context=context)
 
-def slugModel (request, slug):
+def slugModel (request, slug_name):
 
-    slugMod = Room.objects.get(slug=slug)
+    slugMod = Room.objects.get(slug_name=slug_name)
 
     context = {
         'slugMod' : slugMod
