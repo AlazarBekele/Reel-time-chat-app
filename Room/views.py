@@ -3,22 +3,14 @@ from .models import Room
 
 # Create your views here.
 
-def room(request):
+def room (request, slug):
 
     roomModel = Room.objects.all()
+    slugMod = Room.objects.get(slug=slug)
 
     context = {
-        'room' : roomModel
-    }
-
-    return render (request, 'room.html', context=context)
-
-def slugModel (request, slug_name):
-
-    slugMod = Room.objects.get(slug_name=slug_name)
-
-    context = {
+        'room' : roomModel,
         'slugMod' : slugMod
     }
 
-    return render (request, 'Slugy.html', context=context)
+    return render (request, 'room.html', context=context)
